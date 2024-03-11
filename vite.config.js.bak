@@ -6,8 +6,23 @@ import injectHTML from 'vite-plugin-html-inject';
 export default defineConfig(() => {
 	return {
 		plugins: [
-			imagetools(),
+			ViteImageOptimizer({
+				dir: 'img',
+				outDir: 'dist/assets',
+				png: {
+					quality: 52,
+				},
+				jpeg: {
+					quality: 52,
+				},
+				jpg: {
+					quality: 52,
+				},
+				webp: {
+					lossless: true,
+				},
+		}),
 			injectHTML(),
-			]
-		}
+		]  
+	}
 	});

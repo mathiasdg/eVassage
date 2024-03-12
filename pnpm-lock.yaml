@@ -9,7 +9,7 @@ devDependencies:
     specifier: ^1.71.1
     version: 1.71.1
   sharp:
-    specifier: ^0.32.6
+    specifier: 0.32.6
     version: 0.32.6
   svgo:
     specifier: ^3.2.0

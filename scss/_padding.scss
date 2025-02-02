@@ -1,3 +1,5 @@
+@use "variables";
+
 // Padding
 // -------------------------------------------------------------------
 .p0  { padding: 0 }
@@ -6,26 +8,26 @@
 .pb0 { padding-bottom: 0 }
 .pl0 { padding-left: 0 }
 
-.p1  { padding: $space-1 }
-.pt1 { padding-top: $space-1 }
-.pr1 { padding-right: $space-1 }
-.pb1 { padding-bottom: $space-1 }
-.pl1 { padding-left: $space-1 }
+.p1  { padding: variables.$space-1 }
+.pt1 { padding-top: variables.$space-1 }
+.pr1 { padding-right: variables.$space-1 }
+.pb1 { padding-bottom: variables.$space-1 }
+.pl1 { padding-left: variables.$space-1 }
 
-.p2  { padding: $space-2 }
-.pt2 { padding-top: $space-2 }
-.pr2 { padding-right: $space-2 }
-.pb2 { padding-bottom: $space-2 }
-.pl2 { padding-left: $space-2 }
+.p2  { padding: variables.$space-2 }
+.pt2 { padding-top: variables.$space-2 }
+.pr2 { padding-right: variables.$space-2 }
+.pb2 { padding-bottom: variables.$space-2 }
+.pl2 { padding-left: variables.$space-2 }
 
-.p3  { padding: $space-3 }
-.pt3 { padding-top: $space-3 }
-.pr3 { padding-right: $space-3 }
-.pb3 { padding-bottom: $space-3 }
-.pl3 { padding-left: $space-3 }
+.p3  { padding: variables.$space-3 }
+.pt3 { padding-top: variables.$space-3 }
+.pr3 { padding-right: variables.$space-3 }
+.pb3 { padding-bottom: variables.$space-3 }
+.pl3 { padding-left: variables.$space-3 }
 
-.p4  { padding: $space-4 }
-.pt4 { padding-top: $space-4 }
-.pr4 { padding-right: $space-4 }
-.pb4 { padding-bottom: $space-4 }
-.pl4 { padding-left: $space-4 }
+.p4  { padding: variables.$space-4 }
+.pt4 { padding-top: variables.$space-4 }
+.pr4 { padding-right: variables.$space-4 }
+.pb4 { padding-bottom: variables.$space-4 }
+.pl4 { padding-left: variables.$space-4 }

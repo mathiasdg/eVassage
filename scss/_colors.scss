@@ -1,33 +1,35 @@
+@use "variables";
+
 // Text colors
 // -------------------------------------------------------------------
 // Grayscale
-.text--white               { color: $white; }
-.text--lightest-gray       { color: $lightest-gray; }
-.text--light-gray          { color: $light-gray; }
-.text--gray                { color: $gray; }
-.text--dark-gray           { color: $dark-gray; }
-.text--darkest-gray        { color: $darkest-gray; }
+.text--white               { color: variables.$white; }
+.text--lightest-gray       { color: variables.$lightest-gray; }
+.text--light-gray          { color: variables.$light-gray; }
+.text--gray                { color: variables.$gray; }
+.text--dark-gray           { color: variables.$dark-gray; }
+.text--darkest-gray        { color: variables.$darkest-gray; }
 
 // Color scheme
-.text--primary-color       { color: $primary-color; }
-.text--secondary-color     { color: $secondary-color; }
-.text--tertiary-color      { color: $tertiary-color; }
+.text--primary-color       { color: variables.$primary-color; }
+.text--secondary-color     { color: variables.$secondary-color; }
+.text--tertiary-color      { color: variables.$tertiary-color; }
 
 
 // Background colors
 // -------------------------------------------------------------------
 // Grayscale
-.bg--white                 { background-color: $white; }
-.bg--lightest-gray         { background-color: $lightest-gray; }
-.bg--light-gray            { background-color: $light-gray; }
-.bg--gray                  { background-color: $gray; }
-.bg--dark-gray             { background-color: $dark-gray; }
-.bg--darkest-gray          { background-color: $darkest-gray; }
+.bg--white                 { background-color: variables.$white; }
+.bg--lightest-gray         { background-color: variables.$lightest-gray; }
+.bg--light-gray            { background-color: variables.$light-gray; }
+.bg--gray                  { background-color: variables.$gray; }
+.bg--dark-gray             { background-color: variables.$dark-gray; }
+.bg--darkest-gray          { background-color: variables.$darkest-gray; }
 
 // Color scheme
-.bg--primary-color         { background-color: $primary-color; }
-.bg--secondary-color       { background-color: $secondary-color; }
-.bg--tertiary-color        { background-color: $tertiary-color; }
+.bg--primary-color         { background-color: variables.$primary-color; }
+.bg--secondary-color       { background-color: variables.$secondary-color; }
+.bg--tertiary-color        { background-color: variables.$tertiary-color; }
 
 // Hues
-.bg--tan                   { background-color: $tan; }
+.bg--tan                   { background-color: variables.$tan; }

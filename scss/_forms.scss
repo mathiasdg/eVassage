@@ -1,3 +1,5 @@
+@use "variables";
+
 // Base form styles
 // -------------------------------------------------------------------
 // Apply `.form-control` to any of the following form controls:
@@ -6,15 +8,15 @@
 // input (of any type)
 .form-control {
     background-image: none; // Reset unusual Firefox-on-Android default style
-    border: $border-width solid $border-color;
-    border-radius: $border-radius;
-    color: $text-color;
+    border: variables.$border-width solid variables.$border-color;
+    border-radius: variables.$border-radius;
+    color: variables.$text-color;
     display: block;
-    font-family: $font-family--ui;
+    font-family: variables.$font-family--ui;
     font-size: 1rem;
-    line-height: $line-height--base;
+    line-height: variables.$line-height--base;
     max-width: 100%;
-    padding: $form-padding;
+    padding: variables.$form-padding;
     width: 100%;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -65,30 +67,30 @@
 // Select
 // ----------------------------------------------------------------
 .select {
-    color: $text-color;
+    color: variables.$text-color;
     display: block;
     position: relative;
 }
 
 .select select {
-    background-color: $white;
-    border: $border-width solid $border-color;
-    border-radius: $border-radius;
-    color: $text-color;
+    background-color: variables.$white;
+    border: variables.$border-width solid variables.$border-color;
+    border-radius: variables.$border-radius;
+    color: variables.$text-color;
     cursor: pointer;
     display: inline-block;
-    font-family: $heading;
-    line-height: $line-height--base;
+    font-family: variables.$heading;
+    line-height: variables.$line-height--base;
     margin: 0;
     outline: 0;
-    padding: $form-padding;
+    padding: variables.$form-padding;
     width: 100%;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
 
     >option {
-        background-color: $white;
+        background-color: variables.$white;
     }
 }
 
@@ -113,13 +115,13 @@
 // Placeholder styling
 // -------------------------------------------------------------------
 ::-webkit-input-placeholder {
-    color: $light-gray;
+    color: variables.$light-gray;
     -webkit-font-smoothing: antialiased;
 }
 ::-moz-placeholder {
-    color: $light-gray;
+    color: variables.$light-gray;
     -moz-osx-font-smoothing: grayscale;
 }
 :-ms-input-placeholder {
-    color: $light-gray;
+    color: variables.$light-gray;
 }

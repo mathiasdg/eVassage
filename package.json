@@ -1,6 +1,6 @@
 {
   "name": "evassage",
-  "version": "1.0.0",
+  "version": "1.69.0",
   "description": "",
   "type": "module",
   "main": "main.js",
@@ -13,12 +13,12 @@
   "author": "mdg",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.71.1",
+    "sass": "^1.83.4",
     "sharp": "0.32.6",
-    "svgo": "^3.2.0",
-    "vite": "^5.1.5",
+    "svgo": "^3.3.2",
+    "vite": "^6.0.11",
     "vite-imagetools": "^6.2.9",
     "vite-plugin-html-inject": "^1.1.2",
-    "vite-plugin-image-optimizer": "^1.1.7"
+    "vite-plugin-image-optimizer": "^1.1.8"
   }
 }

@@ -1,33 +1,35 @@
+@use "variables";
+
 // Borders
 // -------------------------------------------------------------------
 .border--full {
-    border-color: $border-color;
-    border-style: $border-style;
-    border-width: $border-width;
+    border-color: variables.$border-color;
+    border-style: variables.$border-style;
+    border-width: variables.$border-width;
 }
 
 .border--top {
-    border-top-color: $border-color;
-    border-top-style: $border-style;
-    border-top-width: $border-width;
+    border-top-color: variables.$border-color;
+    border-top-style: variables.$border-style;
+    border-top-width: variables.$border-width;
 }
 
 .border--right {
-    border-right-color: $border-color;
-    border-right-style: $border-style;
-    border-right-width: $border-width;
+    border-right-color: variables.$border-color;
+    border-right-style: variables.$border-style;
+    border-right-width: variables.$border-width;
 }
 
 .border--bottom {
-    border-bottom-color: $border-color;
-    border-bottom-style: $border-style;
-    border-bottom-width: $border-width;
+    border-bottom-color: variables.$border-color;
+    border-bottom-style: variables.$border-style;
+    border-bottom-width: variables.$border-width;
 }
 
 .border--left {
-    border-left-color: $border-color;
-    border-left-style: $border-style;
-    border-left-width: $border-width;
+    border-left-color: variables.$border-color;
+    border-left-style: variables.$border-style;
+    border-left-width: variables.$border-width;
 }
 
 .border--none { border: 0 }
@@ -35,11 +37,11 @@
 
 // Radius
 // -------------------------------------------------------------------
-.rounded { border-radius: $border-radius; }
+.rounded { border-radius: variables.$border-radius; }
 
-.rounded--top    { border-radius: $border-radius $border-radius 0 0 }
-.rounded--right  { border-radius: 0 $border-radius $border-radius 0 }
-.rounded--bottom { border-radius: 0 0 $border-radius $border-radius }
-.rounded--left   { border-radius: $border-radius 0 0 $border-radius }
+.rounded--top    { border-radius: variables.$border-radius variables.$border-radius 0 0 }
+.rounded--right  { border-radius: 0 variables.$border-radius variables.$border-radius 0 }
+.rounded--bottom { border-radius: 0 0 variables.$border-radius variables.$border-radius }
+.rounded--left   { border-radius: variables.$border-radius 0 0 variables.$border-radius }
 
 .circle { border-radius: 50% }

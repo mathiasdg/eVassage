@@ -6,23 +6,45 @@
 $gray-base:               #858a91 !default;
 
 $black:                   #000 !default;
-$darkest-gray:            darken($gray-base, 36%) !default;
-$dark-gray:               darken($gray-base, 18%) !default;
+$darkest-gray:            #26282a !default;
+$dark-gray:               #858a91bc !default;
 $gray:                    $gray-base !default;
-$light-gray:              lighten($gray-base, 18%) !default;
-$lightest-gray:           lighten($gray-base, 36%) !default;
-$white:                   #fff !default;
+$light-gray:              #9ea5afe6 !default;
+$lightest-gray:           #b6bec8 !default;
+$white:                   #ededed !default;
+
+
+/* SCSS HEX */
+$fiax-yellow: #e9d886ff;
+$space-cadet: #222e50ff;
+$cerulean: #007991ff;
+$zomp: #439a86ff;
+$celadon: #bcd8c1ff;
+$pink--lavender: #e6d7e5ff;
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-right: linear-gradient(90deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-bottom: linear-gradient(180deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-left: linear-gradient(270deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-top-right: linear-gradient(45deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-bottom-right: linear-gradient(135deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-top-left: linear-gradient(225deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-bottom-left: linear-gradient(315deg, #e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
+$gradient-radial: radial-gradient(#e3cd6469, #222e5069, #00799169, #439a8669, #bcd8c169);
 
 // Hues
-$blue:                    #428bca !default;
-$green:                   rgba(217, 172, 83, 100) !default;
-$orange:                  #f0ad4e !default;
-$tan:                     #F2EAE1 !default;
+$blue:                    $space-cadet !default;
+$yellow:                  $fiax-yellow !default;
+$orange:                  $zomp !default;
+$tan:                     $celadon !default;
 
 // Color scheme
-$primary-color:           $green !default;
+// $bg-color:                linear-gradient(69deg, rgba(199,184,31,0.16) 14%, rgba(119,9,121,0.16) 45%, rgba(0,212,255,0.16) 78%);
+$bg-color:                $gradient-bottom;
+$primary-color:           $yellow !default;
 $secondary-color:         $blue !default;
-$tertiary-color:          $white !default;
+$tertiary-color:          $zomp !default;
 
 
 // Baseline
@@ -63,7 +85,7 @@ $h5--desktop:             .677rem !default;
 $h6--desktop:             .677rem !default;
 
 // Text color
-$text-color:              $dark-gray !default;
+$text-color:              $darkest-gray !default;
 
 // Text sizes
 $font-size--mobile:       14px !default;
@@ -108,9 +130,9 @@ $heading-mb:              $p-mb !default;
 // Links
 // -------------------------------------------------------------------
 // Link colors
-$link-color:              $primary-color !default;
-$link-hover-color:        darken($primary-color, 10%) !default;
-$active-link-color:       darken($primary-color, 25%) !default;
+$link-color:              $blue;
+$link-hover-color:        scale($blue, -25%);
+$active-link-color:       scale($blue, -33%);
 
 
 // Buttons
@@ -126,9 +148,9 @@ $form-padding:            .45rem .8rem .35rem !default;
 
 // Borders
 // -------------------------------------------------------------------
-$border-color:            $light-gray !default;
+$border-color:            $zomp !default;
 $border-style:            solid !default;
-$border-radius:           3px !default;
+$border-radius:           6px !default;
 $border-width:            1px !default;
 
 

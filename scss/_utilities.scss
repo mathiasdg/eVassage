@@ -1,3 +1,5 @@
+@use "variables";
+
 // Position utilities
 // -------------------------------------------------------------------
 .relative              { position: relative; }
@@ -38,7 +40,7 @@
 // `show-on-mobile` displays the element only on mobile devices
 // `mobile-block` makes the element go display block on mobile devices
 .show-on-mobile { display: none !important; }
-@media screen and (max-width: $breakpoint--md) {
+@media screen and (max-width: variables.$breakpoint--md) {
     .show-on-mobile,
     .block-on-mobile {
         display: block !important;
@@ -49,7 +51,7 @@
     .align--center-on-mobile { text-align: center !important; }
 }
 
-@media screen and (max-width: $breakpoint--lg) and (min-width: $breakpoint--md) {
+@media screen and (max-width: variables.$breakpoint--lg) and (min-width: variables.$breakpoint--md) {
     .show-md-to-lg { display: block; }
 
     .hide-md-to-lg { display: none; }
@@ -60,11 +62,11 @@
     text-overflow: ellipsis;
 }
 
-@media screen and (max-width: $breakpoint--md) {
+@media screen and (max-width: variables.$breakpoint--md) {
     .show-md-to-lg { display: none; }
 }
 
-@media screen and (min-width: $breakpoint--lg) {
+@media screen and (min-width: variables.$breakpoint--lg) {
     .show-md-to-lg { display: none; }
 }
 

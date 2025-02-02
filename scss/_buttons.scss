@@ -1,21 +1,23 @@
+@use "variables";
+
 // Base button styles
 // -------------------------------------------------------------------
 .btn {
     background-image: none; // Reset unusual Firefox-on-Android default style: https://github.com/necolas/normalize.css/issues/214
-    border-radius: $border-radius;
+    border-radius: variables.$border-radius;
     border-style: solid;
-    border-width: $border-width;
+    border-width: variables.$border-width;
     cursor: pointer;
     display: inline-block; // Allow us to better style box model properties
-    font-family: $font-family--ui;
+    font-family: variables.$font-family--ui;
     font-size: 1rem;
-    line-height: $line-height--base;
+    line-height: variables.$line-height--base;
     margin-bottom: 0; // For input.btn
-    padding: $button-padding;
+    padding: variables.$button-padding;
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: background-color $fade, background $fade, color $fade, border $fade;
+    transition: background-color variables.$fade, background variables.$fade, color variables.$fade, border variables.$fade;
     user-select: none;
     vertical-align: middle; // Line different size buttons up nicely
     white-space: nowrap; // Stop buttons wrapping and looking broken
@@ -42,9 +44,9 @@
         pointer-events: none; // Future-proof disabling of clicks
     }
 
-    @media screen and (max-width: $breakpoint--sm) {
+    @media screen and (max-width: variables.$breakpoint--sm) {
         display: block;
-        margin-bottom: $space-1;
+        margin-bottom: variables.$space-1;
     }
 }
 
@@ -59,8 +61,8 @@ a.btn {
 // Button sizes
 // -------------------------------------------------------------------
 .btn--sm {
-    font-size: $h6;
-    padding:$button-padding--sm;
+    font-size: variables.$h6;
+    padding:variables.$button-padding--sm;
 }
 
 
@@ -68,19 +70,19 @@ a.btn {
 // -------------------------------------------------------------------
 // Default button
 .btn--default {
-    background-color: $primary-color;
-    border-color: $primary-color;
-    color: $white;
+    background-color: variables.$primary-color;
+    border-color: variables.$primary-color;
+    color: variables.$white;
 
     &:hover,
     &:focus {
-        background-color: darken($primary-color, 10%);
-        border-color: darken($primary-color, 10%);
+        background-color: scale(variables.$primary-color, 10%);
+        border-color: scale(variables.$primary-color, 10%);
     }
 
     &:active {
-        background-color: darken($primary-color, 20%);
-        border-color: darken($primary-color, 20%);
+        background-color: scale(variables.$primary-color, 20%);
+        border-color: scale(variables.$primary-color, 20%);
     }
 }
 
@@ -88,18 +90,18 @@ a.btn {
 .btn--outline,
 .btn--outline:visited {
     background-color: transparent;
-    border-color: $border-color;
-    border-width: $border-width;
-    color: $text-color;
+    border-color: variables.$border-color;
+    border-width: variables.$border-width;
+    color: variables.$text-color;
 
     &:hover,
     &:focus {
         background-color: transparent;
-        border-color: $dark-gray;
+        border-color: variables.$dark-gray;
     }
 
     &:active {
         background-color: transparent;
-        border-color: $light-gray;
+        border-color: variables.$light-gray;
     }
 }

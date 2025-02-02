@@ -1,3 +1,5 @@
+@use "variables";
+
 // Base global styles
 // -------------------------------------------------------------------
 // 2. Set the default font stylings for the entire project.
@@ -6,15 +8,15 @@
 // css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
 html {
     box-sizing: border-box; // [4]
-    font-family: $font-family--base; // [2]
-    font-size: $font-size--mobile; // [2]
+    font-family: variables.$font-family--base; // [2]
+    font-size: variables.$font-size--mobile; // [2]
     font-style: normal; // [2]
-    font-weight: $font-weight--base; // [2]
+    font-weight: variables.$font-weight--base; // [2]
     min-height: 100%; // Ensure the page always fills at least the entire height of the viewport
     -webkit-tap-highlight-color: rgba(0,0,0,0); // [3]
 
-    @media screen and (min-width: $breakpoint--sm) {
-        font-size: $font-size--desktop;
+    @media screen and (min-width: variables.$breakpoint--sm) {
+        font-size: variables.$font-size--desktop;
     }
 }
 
@@ -25,9 +27,11 @@ html {
 // 2. For now, this is `!important` because the `::selection` (below) affects
 //    the background color in IE.
 body {
-    background-color: $white !important; // [2]
-    color: $text-color;
-    line-height: $line-height--base;
+    // background: variables.$bg-color !important; // [2]
+    background-image: radial-gradient(#b4b7ee 0.05em, #bdbc9235 0.05em);
+    background-size: 14px 14px;
+    color: variables.$text-color;
+    line-height: variables.$line-height--base;
     margin: 0;
     padding: 0;
     -moz-osx-font-smoothing: grayscale; // [1]
@@ -36,12 +40,12 @@ body {
 // Remove text-shadow in selection highlight: h5bp.com/i
 // These selection rule sets have to be separate.
 ::-moz-selection {
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     color: #fff;
     text-shadow: none;
 }

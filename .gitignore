@@ -1,4 +1,3 @@
-dist/
 
 # bun files
 bun.lockb
@@ -98,7 +97,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/

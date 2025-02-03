@@ -36,22 +36,27 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'pnpm'
-
-      # Install pnpm
-      - name: Install pnpm
-        run: npm install -g pnpm@8
+          cache: 'npm' # Cache npm dependencies
 
       # Install dependencies
       - name: Install dependencies
-        run: pnpm install --force
+        run: npm install
 
       # Build the project
       - name: Build
-        run: pnpm run build
+        run: npm run build
 
       # Configure GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
       # Upload build artifacts
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # Path to the build output directory
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3

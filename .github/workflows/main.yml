@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Build evassage website voor GH pages
+name: Build evassage website for GH pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -15,7 +15,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Allow one concurrent deployment (optional, remove if not needed)
 concurrency:
   group: 'pages'
   cancel-in-progress: true
@@ -30,26 +30,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-        with:
-          node-version: 18
-          version: 6.32.9
-      - name: Set up Node
+
+      # Set up Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'pnpm'
+
+      # Install pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm@8
+
+      # Install dependencies
       - name: Install dependencies
         run: pnpm install --force
+
+      # Build the project
       - name: Build
         run: pnpm run build
+
+      # Configure GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload dist repository
-          path: './dist'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+
+      # Upload build artifacts

@@ -30,6 +30,7 @@
 .bg--primary-color         { background-color: variables.$primary-color; }
 .bg--secondary-color       { background-color: variables.$secondary-color; }
 .bg--tertiary-color        { background-color: variables.$tertiary-color; }
+.bg--gradient              { background: variables.$gradient-bottom-left; }
 
 // Hues
 .bg--tan                   { background-color: variables.$tan; }

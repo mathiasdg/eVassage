@@ -17,3 +17,47 @@
 
 .border--primary-color { border: 5px solid variables.$primary-color; }
 .border--tan { border: 5px solid variables.$tan; }
+
+.border--tan, .border--primary-color {
+    border-radius: 0;
+    transition: border-radius 330ms ease-out;
+}
+
+.border--tan:hover, .border--primary-color:hover {
+    border-radius: 3.69rem;
+    transition: border-radius 420ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.image-box {
+    border-radius: 0rem;
+    transition: border-radius 690ms cubic-bezier(.81,.23,.57,1.36);
+}
+.image-box:hover {
+    border-radius: 50%;
+    transition: border-radius 420ms ease-in-out;
+}
+
+// .aspect-ratio__content {
+//     border-radius: 69rem;
+// }
+
+.button-box {
+    background-color: transparent;
+    transition: background-color 440ms ease-in-out;
+}
+.button-box:hover {
+    background-color: #c3b362;
+    color: whitesmoke;
+    transition: background-color 440ms ease-in;
+}
+.button-box > p > .link {
+    color: #353533;
+    transition: color 220ms ease-in-out;
+}
+.button-box > p > .link:hover {
+    color: whitesmoke;
+    transition: color 220ms ease-in;
+}
+.afspraak-box {
+    animation: pulse 6.9s ease-in-out 6.9s infinite ;
+}

@@ -1,3 +1,21 @@
+@use 'variables';
+
 // Reveal on scroll
 // -------------------------------------------------------------------
 .is-revealing { visibility: hidden; }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: variables.$celadon;
+    }
+    50% {
+        background-color: variables.$celadon;
+        transform: scale(1.01);
+        border-radius: 0.69rem;
+    }
+    100% {
+        background-color: variables.$celadon;
+        transform: scale(1);
+    }
+}

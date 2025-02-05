@@ -7,14 +7,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 3000"
+    "preview": "vite preview --port 3000",
+    "images": "node scripts/process-images.js"
   },
   "keywords": [],
   "author": "mdg",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.83.4",
-    "vite": "^6.0.11",
-    "vite-plugin-html-inject": "^1.1.2"
+    "sharp": "^0.33.5",
+    "vite": "^6.1.0",
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-image-optimizer": "^1.1.8"
   }
 }

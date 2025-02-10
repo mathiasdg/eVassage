@@ -14,10 +14,11 @@
   "author": "mdg",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.83.4",
+    "sass": "^1.84.0",
     "sharp": "^0.33.5",
     "vite": "^6.1.0",
     "vite-plugin-html-inject": "^1.1.2",
-    "vite-plugin-image-optimizer": "^1.1.8"
+    "vite-plugin-image-optimizer": "^1.1.8",
+    "vite-plugin-md-to-html": "^0.0.18"
   }
 }

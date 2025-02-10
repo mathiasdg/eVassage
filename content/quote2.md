@@ -3,7 +3,7 @@ title: de quote van Muir om een box te vullen
 ---
 
 <p class="h4">
-We are now in the mountains and they are in us, kindling enthusiasm, making every nerve quiver, filling every pore and cell of us. As going to the mountains is going home.
+Ze heeft echt de zachtste handies en ze is zóóó super schattig.
 </p>
 
-*– John Muir*
+*– da Mathi'ke*

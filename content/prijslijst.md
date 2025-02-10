@@ -2,8 +2,9 @@
 title: de quote van Muir om een box te vullen
 ---
 
-<p class="h4">
-We are now in the mountains and they are in us, kindling enthusiasm, making every nerve quiver, filling every pore and cell of us. As going to the mountains is going home.
-</p>
+### Prijslijst
 
-*– John Muir*
+- 30 min :: 69 eur
+- 45 min :: 169 eur
+- 60 min :: 269 eur
+- 69 min :: 369 eur

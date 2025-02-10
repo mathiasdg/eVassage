@@ -4,8 +4,8 @@ import sharp from "sharp";
 
 const sourceDir = "./img";
 const outputDir = "./img/processed";
-const maxWidth = 1690;
-const maxHeight = 1269;
+const maxWidth = 1234;
+const maxHeight = 870;
 
 function formatBytes(bytes) {
   const sizes = ["Bytes", "KB", "MB"];

@@ -6,16 +6,12 @@
 
 @keyframes pulse {
     0% {
-        transform: scale(1);
-        background-color: variables.$celadon;
+        color: variables.$black;
     }
-    50% {
-        background-color: variables.$celadon;
-        transform: scale(1.01);
-        border-radius: 0.69rem;
+    87% {
+        color: variables.$zomp;
     }
     100% {
-        background-color: variables.$celadon;
-        transform: scale(1);
+        color: variables.$white;
     }
 }

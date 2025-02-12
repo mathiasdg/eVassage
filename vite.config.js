@@ -1,11 +1,8 @@
 import { defineConfig } from "vite";
 import fs from "node:fs";
-import path from "node:path";
 import markdownIt from "markdown-it";
-
-import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
-// import { vitePluginMdToHTML } from "vite-plugin-md-to-html";
 import injectHTML from "vite-plugin-html-inject";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 const md = new markdownIt({
   html: true,

@@ -1,7 +1,3 @@
----
-title: de quote van Muir om een box te vullen
----
-
 ### Prijslijst
 
 - 30 min :: 69 eur

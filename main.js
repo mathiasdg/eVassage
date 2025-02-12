@@ -1,11 +1,4 @@
 import "/scss/main.scss";
-import quote1 from "./content/quote1.md";
-import quote2 from "./content/quote2.md";
-import info from "./content/info.md";
-
-document.querySelector("#quote1-content").innerHTML = quote1;
-document.querySelector("#quote2-content").innerHTML = quote2;
-document.querySelector("#info-content").innerHTML = info;
 
 (() => {
   const e = document.documentElement;

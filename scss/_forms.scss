@@ -18,7 +18,7 @@
     max-width: 100%;
     padding: variables.$form-padding;
     width: 100%;
-    -moz-osx-font-smoothing: grayscale;
+    // -moz-osx-font-smoothing: grayscale;
 }
 
 .label {
@@ -85,9 +85,9 @@
     outline: 0;
     padding: variables.$form-padding;
     width: 100%;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    // -webkit-appearance: none;
+    //    -moz-appearance: none;
+    appearance: none;
 
     >option {
         background-color: variables.$white;
@@ -114,14 +114,14 @@
 
 // Placeholder styling
 // -------------------------------------------------------------------
-::-webkit-input-placeholder {
-    color: variables.$light-gray;
-    -webkit-font-smoothing: antialiased;
-}
-::-moz-placeholder {
-    color: variables.$light-gray;
-    -moz-osx-font-smoothing: grayscale;
-}
-:-ms-input-placeholder {
-    color: variables.$light-gray;
-}
+// ::-webkit-input-placeholder {
+//     color: variables.$light-gray;
+//     -webkit-font-smoothing: antialiased;
+// }
+// ::-moz-placeholder {
+//     color: variables.$light-gray;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+// :-ms-input-placeholder {
+//     color: variables.$light-gray;
+// }

@@ -13,7 +13,7 @@ html {
     font-style: normal; // [2]
     font-weight: variables.$font-weight--base; // [2]
     min-height: 100%; // Ensure the page always fills at least the entire height of the viewport
-    -webkit-tap-highlight-color: rgba(0,0,0,0); // [3]
+    // -webkit-tap-highlight-color: rgba(0,0,0,0); // [3]
 
     @media screen and (min-width: variables.$breakpoint--sm) {
         font-size: variables.$font-size--desktop;
@@ -28,22 +28,23 @@ html {
 //    the background color in IE.
 body {
     // background: variables.$bg-color !important; // [2]
-    background-image: radial-gradient(#b4b7ee 0.05em, #bdbc9235 0.05em);
-    background-size: 14px 14px;
+    background-image: radial-gradient(variables.$celadon 0.069em, #bdbc9235 0.069em);
+    background-size: 11px 11px;
+    // background-attachment: fixed;
     color: variables.$text-color;
     line-height: variables.$line-height--base;
     margin: 0;
     padding: 0;
-    -moz-osx-font-smoothing: grayscale; // [1]
+    // -moz-osx-font-smoothing: grayscale; // [1]
 }
 
 // Remove text-shadow in selection highlight: h5bp.com/i
 // These selection rule sets have to be separate.
-::-moz-selection {
-    background-color: variables.$primary-color;
-    color: #fff;
-    text-shadow: none;
-}
+// ::-moz-selection {
+//     background-color: variables.$primary-color;
+//     color: #fff;
+//     text-shadow: none;
+// }
 ::selection {
     background-color: variables.$primary-color;
     color: #fff;
@@ -52,6 +53,6 @@ body {
 img::selection {
     background: transparent;
 }
-img::-moz-selection {
-    background: transparent;
-}
+// img::-moz-selection {
+//     background: transparent;
+// }

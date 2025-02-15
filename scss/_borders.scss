@@ -9,7 +9,7 @@
 }
 
 .border--top {
-    border-image: linear-gradient(to right, variables.$orange, variables.$yellow, variables.$tan, variables.$orange) 1;
+    border-image: linear-gradient(to right, variables.$yellow, variables.$orange, variables.$yellow, variables.$tan, variables.$orange) 1;
     border-top-color: variables.$border-color;
     border-top-style: variables.$border-style;
     border-top-width: 0.22rem;

@@ -21,8 +21,8 @@
     user-select: none;
     vertical-align: middle; // Line different size buttons up nicely
     white-space: nowrap; // Stop buttons wrapping and looking broken
-    -webkit-appearance: none;
-            appearance: none;
+    // -webkit-appearance: none;
+    appearance: none;
 
     &:hover,
     &:focus {

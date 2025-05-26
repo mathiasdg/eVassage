@@ -1,4 +1,4 @@
-<p class="h4">
+<p>
 Ze heeft echt de zachtste handies en ze is zóóó super schattig.
 </p>
 

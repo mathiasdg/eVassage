@@ -1,6 +1,7 @@
 
 # bun files
 bun.lockb
+bun.lock
 .idea/
 
 # Created by https://www.toptal.com/developers/gitignore/api/node

@@ -1,0 +1,9 @@
+@use "variables";
+
+.quote-content > p {
+    @media screen and (variables.$breakpoint--lg < width) {
+        font-size: clamp(0.69rem, 1.2vw, 0.94rem);
+        line-height: variables.$line-height--heading;
+        margin-bottom: variables.$heading-mb;
+    }
+}
